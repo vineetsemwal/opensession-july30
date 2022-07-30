@@ -1,0 +1,32 @@
+[
+
+{ 
+"id" : 1,
+"name" : "saurav",
+"age":21 ,
+
+"address":{
+"houseNumber":"a12",
+ "city": "hyderabad",
+"state": "telangana"
+} 
+
+}
+
+,
+
+
+{ 
+"id" : 2,
+"name" : "suyansh",
+"age":22 ,
+
+"address":{
+"houseNumber":"b34",
+ "city": "bangaluru",
+"state": "karnatka"
+} 
+
+}
+
+]
