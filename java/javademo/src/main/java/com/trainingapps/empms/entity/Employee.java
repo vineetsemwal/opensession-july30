@@ -1,14 +1,22 @@
-package com.trainingapps.empms;
+package com.trainingapps.empms.entity;
 
 public class Employee {
     private long id;
     private String name;
     private int age;
+    private Address address;
 
-    public Employee(long id, String name, int age ){
+    public Employee(){}
+
+    public Employee(long id, String name, int age,Address address ){
+        this(name,age,address);
         this.id=id;
+    }
+
+    public Employee( String name, int age, Address address ){
         this.name = name;
         this.age=age;
+        this.address=address;
     }
 
     public long getId() {
@@ -35,13 +43,20 @@ public class Employee {
         this.age = age;
     }
 
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if(this==obj){
             return true;
         }
-
-        if(obj==null || !(obj instanceof Employee) ){
+        if(obj==null || !obj.getClass().equals(Employee.class) ){
             return false;
         }
 
